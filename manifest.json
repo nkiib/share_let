@@ -3,7 +3,10 @@
     "description":"Copy the title and URL of the website you are viewing to the clipboard in a format that can be shared on social networking sites.",
     "version":"0.1.0",
     "manifest_version":3,
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "scripting","clipboardWrite"],
+    "host_permissions":[
+        "<all_urls>"
+    ],
     "action": {
         "default_popup": "popup.html"
     }
